@@ -4,6 +4,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: "lato", sans-serif;
+}
+
+.head {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  gap: 5px;
 }
 
 .photoInside {
@@ -12,7 +20,9 @@ body {
 }
 
 .big-snowboarder {
+  padding-top: 5px;
   border-radius: 5%;
+  right: 10px;
 }
 .WELCOME {
   position: absolute;
@@ -46,12 +56,11 @@ body {
   border-radius: 10%;
 }
 
-/* .price-image { 
-  width: 60%;
+.price-image {
   height: auto;
   margin-bottom: 10px;
   border-radius: 10%;
-} */
+}
 
 @media (max-width: 600px) {
   .sections {
@@ -69,10 +78,15 @@ body {
     height: auto;
     border-radius: 10%;
   }
+
+  .big-snowboarder {
+    width: 100%;
+  }
 }
 
 .included {
   color: #115e86;
+  text-align: center;
 }
 
 .container {
@@ -123,4 +137,22 @@ body {
 .hand-tuning,
 .powder-prep {
   font-weight: 900;
+}
+
+.directory {
+  background-color: #115e86;
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: auto;
+}
+
+.directory:hover {
+  color: #76cfff;
+}
+header {
+  background-color: #96999b;
+  padding: 10px;
+  text-align: end;
 }
