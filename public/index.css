@@ -156,3 +156,91 @@ header {
   padding: 10px;
   text-align: end;
 }
+
+.form-box {
+  width: 30%;
+  max-width: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #96999b;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: aliceblue;
+  position: relative;
+}
+.form-box h1::after {
+  content: "";
+  width: 30px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #115e86;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.input-field {
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65%;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.signInput {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px;
+}
+
+.input-field i {
+  margin-left: 15px;
+  color: #96999b;
+}
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+form p a {
+  text-decoration: none;
+  color: #115e86;
+}
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #115e86;
+  color: aliceblue;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+.input-group {
+  height: 230px;
+}
+
+.btn-field button.disable {
+  background-color: #656666;
+  color: rgb(207, 207, 207);
+}
