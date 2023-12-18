@@ -16,14 +16,15 @@ body {
 
 .photoInside {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .big-snowboarder {
   padding-top: 5px;
-  border-radius: 5%;
-  right: 10px;
+  border-radius: 25px;
+  width: 70vw;
 }
+
 .WELCOME {
   position: absolute;
   text-align: center;
@@ -40,13 +41,15 @@ body {
 .prices {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  gap: 15px;
 }
 
 .sections {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 35%;
+  width: 30%;
 }
 
 .sections img {
@@ -57,9 +60,10 @@ body {
 }
 
 .price-image {
-  height: auto;
+  height: 300px;
   margin-bottom: 10px;
-  border-radius: 10%;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 @media (max-width: 600px) {
@@ -161,7 +165,7 @@ header {
   width: 30%;
   max-width: absolute;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #96999b;
@@ -172,7 +176,7 @@ header {
 
 .form-box h1 {
   font-size: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   color: aliceblue;
   position: relative;
 }
@@ -183,7 +187,7 @@ header {
   border-radius: 3px;
   background-color: #115e86;
   position: absolute;
-  bottom: -12px;
+  bottom: -11px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -237,10 +241,27 @@ form p a {
   transition: background 1s;
 }
 .input-group {
-  height: 230px;
+  height: 200px;
 }
 
 .btn-field button.disable {
   background-color: #656666;
   color: rgb(207, 207, 207);
+}
+
+.submitBtn {
+  flex-basis: 48%;
+  background: #115e86;
+  color: aliceblue;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  width: 100%;
+}
+
+.submit-field {
+  padding: 20px;
 }
