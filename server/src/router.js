@@ -1,5 +1,5 @@
 const express = require("express");
-const { getusers, postForm } = require("./controller");
+const { getusers, postForm, Postsignup } = require("./controller");
 
 const router = express.Router();
 
@@ -16,6 +16,19 @@ router.post("/forms", async (req, res) => {
 
     const response = await postForm(req, res);
 
+    console.log("sent result", response);
+  } catch (error) {
+    console.error("Error handling form submission:", error.message);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+router.post("/signUp", async (req, res) => {
+  try {
+    const userSignUp = req.body;
+    console.log("step 1 signup", userSignUp);
+
+    const response = await Postsignup(req, res);
     console.log("sent result", response);
   } catch (error) {
     console.error("Error handling form submission:", error.message);
