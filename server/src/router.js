@@ -1,5 +1,5 @@
 const express = require("express");
-const { getusers, postForm, Postsignup } = require("./controller");
+const { getusers, postForm, Postsignup, signInUser } = require("./controller");
 
 const router = express.Router();
 
@@ -34,6 +34,10 @@ router.post("/signUp", async (req, res) => {
     console.error("Error handling form submission:", error.message);
     res.status(500).send("Internal Server Error");
   }
+});
+
+router.post("/signIn", async (req, res) => {
+  await signInUser(req, res);
 });
 
 module.exports = router;

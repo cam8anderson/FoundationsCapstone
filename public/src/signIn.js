@@ -68,7 +68,7 @@ const postSubmit = async () => {
   console.log(signInfo);
 };
 
-const signingIn = () => {
+const signingIn = async () => {
   const signEmail = emailbox.value;
   const signPass = passbox.value;
 
@@ -76,5 +76,11 @@ const signingIn = () => {
     signEmail,
     signPass,
   };
+
+  const userSignIn = await axios.post(
+    `http://localhost:4004/signIn`,
+    signInInfo
+  );
+  console.log("response", userSignIn.data);
   console.log(signInInfo);
 };
