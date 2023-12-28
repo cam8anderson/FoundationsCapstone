@@ -265,3 +265,28 @@ form p a {
 .submit-field {
   padding: 20px;
 }
+
+.reviewBox {
+  background-color: #115e86;
+  margin-left: 12%;
+  margin-right: 12%;
+  border-radius: 20px;
+}
+
+.reviewname {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.reviewtext {
+  color: white;
+  font-size: large;
+}
+
+.reviewrating {
+  color: white;
+  font-size: large;
+  padding-bottom: 5px;
+}

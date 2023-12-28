@@ -1,5 +1,12 @@
 const express = require("express");
-const { getusers, postForm, Postsignup, signInUser } = require("./controller");
+
+const {
+  getusers,
+  postForm,
+  Postsignup,
+  signInUser,
+  yelpApi,
+} = require("./controller");
 
 const router = express.Router();
 
@@ -39,5 +46,7 @@ router.post("/signUp", async (req, res) => {
 router.post("/signIn", async (req, res) => {
   await signInUser(req, res);
 });
+
+router.get("/yelp-api", yelpApi);
 
 module.exports = router;

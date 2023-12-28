@@ -81,6 +81,10 @@ const signingIn = async () => {
     `http://localhost:4004/signIn`,
     signInInfo
   );
-  console.log("response", userSignIn.data);
-  console.log(signInInfo);
+  console.log(userSignIn);
+
+  const redirectURL = userSignIn.data.redirect;
+  if (redirectURL) {
+    window.location.href = redirectURL;
+  }
 };
